@@ -1,0 +1,32 @@
+@import "_colores";
+
+.navbar {
+  background-color: $color-navbar;
+  height: 70px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-brand {
+  color: $color-texto-navbar !important;
+}
+
+.nav-link {
+  color: $color-enlace-navbar !important;
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: $color-enlace-hover-navbar !important;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-height: 40px;
+    margin-top: -5px;
+  }
+}
+  
+  /* fin navbar */
