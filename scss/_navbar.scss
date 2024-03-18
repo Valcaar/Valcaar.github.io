@@ -1,7 +1,8 @@
-@import "_colores";
+@import "_colores"; 
+
 
 .navbar {
-  background-color: $color-navbar;
+  background-color: $color-navbar; 
   height: 70px;
 }
 
@@ -18,8 +19,9 @@
   color: $color-enlace-navbar !important;
   font-size: 20px;
 }
+
 .nav-link:hover {
-  color: $color-enlace-hover-navbar !important;
+  color: $color-enlace-hover-navbar !important; 
 }
 
 @media (max-width: 576px) {
@@ -29,4 +31,4 @@
   }
 }
   
-  /* fin navbar */
+/* fin navbar */

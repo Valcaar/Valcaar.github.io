@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 .navbar {
-  background-color: rgb(224, 224, 245);
+  background-color: #eed1fc;
   height: 70px;
 }
 
@@ -39,14 +40,25 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.animate {
+  animation: aparecer 2s infinite alternate;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .call h1 {
   color: white;
   width: 100%;
@@ -166,7 +178,6 @@
   text-align: center;
 }
 
-/* fin slider */
 main .contacto {
   background-color: #ffffff;
   padding-bottom: 10%;
@@ -201,12 +212,17 @@ input, textarea {
 }
 
 .btnFormulario {
-  background-color: rgb(243, 176, 255);
-  color: #000000;
+  background-color: rgb(201, 201, 205);
+  color: white;
   border: none;
   padding: 10px 10px;
   border-radius: 5px;
   font-size: 18px;
+}
+
+.btnFormulario:hover {
+  background-color: rgb(121, 31, 146);
+  border-color: rgb(121, 31, 146);
 }
 
 /* fin formulario */
@@ -232,32 +248,33 @@ input, textarea {
 }
 
 /* fin galeria */
-.text-tour {
-  color: #333;
-  font-size: 2rem;
-  padding: 2rem;
-}
-
-.jumbotron-tour {
-  background-color: #f8f9fa;
-}
-
 .card {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ccc;
   border-radius: 5px;
   transition: transform 0.3s ease;
+  height: 100%;
+  align-items: center;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
 
 .card-img-top {
+  flex: 1;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  object-fit: cover;
 }
 
 .card-body {
   padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-title {
@@ -270,12 +287,13 @@ input, textarea {
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: rgb(201, 201, 205);
+  border-color: rgb(201, 201, 205);
 }
+
 .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
+  background-color: rgb(121, 31, 146);
+  border-color: rgb(121, 31, 146);
 }
 
 .banner {
@@ -289,6 +307,20 @@ input, textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.display-4 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.text-mision h2 {
+  color: rgb(121, 31, 146);
+}
+
+.text-vision h2 {
+  color: rgb(121, 31, 146);
 }
 
 .container {
@@ -307,7 +339,7 @@ input, textarea {
 }
 
 .footer {
-  background-color: #2d2f46;
+  background-color: #61456f;
 }
 
 /* fin Footer */

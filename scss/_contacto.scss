@@ -10,6 +10,7 @@ main .contacto h1 {
   padding: 20px;
 }
 
+
 form {
   margin-top: 20px;
   margin-left: 35%;
@@ -33,14 +34,17 @@ input, textarea {
 }
 
 .btnFormulario {
-  background-color: $color-fondo-botones-formulario;
-  color: #000000;
+  background-color: $color-boton;
+  color: $color-texto-call;
   border: none;
   padding: 10px 10px;
   border-radius: 5px;
   font-size: 18px;
 }
-
+.btnFormulario:hover {
+  background-color: $color-boton-active; 
+  border-color: $color-boton-active
+}
   
   /* fin formulario */
   

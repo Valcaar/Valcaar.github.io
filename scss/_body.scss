@@ -5,17 +5,30 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-// Call
+// animación
+.animate {
+  animation: aparecer 2s infinite alternate;
+}
+
+@keyframes aparecer {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
 .call h1 {
-  color: $color-texto-call;
+  color: $color-texto-call; // Usa la variable de color definida en _colores.scss
   width: 100%;
   padding: 238px;
   text-align: center;
@@ -30,33 +43,34 @@
     padding-bottom: 50px;
   }
 }
+
 .display-4 {
   text-align: center;
-  color: $color-texto-jumbotron;
+  color: $color-texto-jumbotron; // Usa la variable de color definida en _colores.scss
   text-shadow: 2px 2px 4px rgba(19, 10, 10, 0.5);
 }
-
 
 // Logo
 .logo {
   flex-grow: 1;
 }
+
 .logo img {
   width: 100px;
   height: 50px;
 }
 
-// Barra
 .barra a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 23px;
 }
+
 .barra a:hover {
   color: rgb(210, 9, 177);
 }
 
-// Carousel
+// carousel
 #carouselExampleIndicators {
   height: 500px;
   margin: auto;
@@ -67,30 +81,30 @@
     width: 80%;
   }
 }
+
 @media (min-width: 576px) and (max-width: 991px) {
   #carouselExampleIndicators {
     width: 70%;
   }
 }
+
 @media (min-width: 992px) {
   #carouselExampleIndicators {
     width: 50%;
   }
 }
 
-
-// Titulo
+// sección
 #Titulo .row #sec1 {
   text-transform: uppercase;
   margin-top: 200px;
-  color: $color-texto-seccion;
+  color: $color-texto-seccion; // Usa la variable de color definida en _colores.scss
 }
 
 .row .innerSec1 {
   text-align: center;
 }
 
-// Seccion
 .seccion {
   height: 350px;
   width: 100%;
@@ -105,19 +119,22 @@
   text-align: center;
   margin: 20px;
 }
+
 .bloque img {
   width: 100px;
   height: auto;
 }
+
 .bloque p {
   margin-top: 10px;
   text-align: center;
 }
 
-// Slider
+// slider
 .bloque-slider {
   text-align: center;
 }
+
 .bloque-slider img {
   width: 100px;
   height: auto;
@@ -136,6 +153,3 @@
   margin-top: 10px;
   text-align: center;
 }
-
-  
-  /* fin slider */
