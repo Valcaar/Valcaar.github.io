@@ -13,6 +13,13 @@
 .navbar-collapse {
   display: flex;
   justify-content: end;
+  background-color: #eed1fc;
+  width: 100%;
+}
+
+.navbar-toggler {
+  background-color: #c9a5db;
+  z-index: 9999;
 }
 
 .navbar-brand {
@@ -191,7 +198,8 @@ main .contacto h1 {
 
 form {
   margin-top: 20px;
-  margin-left: 35%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 label {
@@ -203,7 +211,7 @@ label {
 
 input, textarea {
   display: block;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border: 2px solid #333;
   border-radius: 2px;
@@ -211,6 +219,11 @@ input, textarea {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  input, textarea {
+    width: 95%;
+  }
+}
 .btnFormulario {
   background-color: rgb(201, 201, 205);
   color: white;
@@ -225,7 +238,6 @@ input, textarea {
   border-color: rgb(121, 31, 146);
 }
 
-/* fin formulario */
 .text-gale h1 {
   color: #202020;
   font-size: 50px;

@@ -4,16 +4,17 @@ main .contacto {
   background-color: $color-fondo-contacto;
   padding-bottom: 10%;
 }
+
 main .contacto h1 {
   color: $color-texto-contacto;
   text-align: center;
   padding: 20px;
 }
 
-
 form {
   margin-top: 20px;
-  margin-left: 35%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 label {
@@ -25,12 +26,18 @@ label {
 
 input, textarea {
   display: block;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   border: 2px solid $color-texto-contacto;
   border-radius: 2px;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  input, textarea {
+    width: 95%;
+  }
 }
 
 .btnFormulario {
@@ -41,10 +48,8 @@ input, textarea {
   border-radius: 5px;
   font-size: 18px;
 }
+
 .btnFormulario:hover {
   background-color: $color-boton-active; 
-  border-color: $color-boton-active
+  border-color: $color-boton-active;
 }
-  
-  /* fin formulario */
-  

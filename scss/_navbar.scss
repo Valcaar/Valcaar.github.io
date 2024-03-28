@@ -9,8 +9,13 @@
 .navbar-collapse {
   display: flex;
   justify-content: end;
+  background-color: $color-navbar;
+  width: 100%;
 }
-
+.navbar-toggler {
+  background-color: $color-navbar-toggler;
+  z-index: 9999; 
+}
 .navbar-brand {
   color: $color-texto-navbar !important;
 }
